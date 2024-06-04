@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Publications - Laura Jaimes</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .publication {
+            margin-bottom: 20px;
+        }
+        .publication h2 {
+            cursor: pointer;
+            color: #2c3e50;
+        }
+        .publication p {
+            display: none;
+            margin-top: 10px;
+            font-size: 16px;
+        }
+        .link {
+            margin-top: 10px;
+            display: inline-block;
+            text-decoration: none;
+            color: #3498db;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="experience.html">Experience</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="publications.html">Publications</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="publications">
+            <h1>Publications</h1>
+            <div class="publication" onclick="toggleDetails(this)">
+                <h2>Morphological and Morphodynamical Aspects Applied to the Zoning of Relative Hazard by Landslide (Scale 1:100,000)</h2>
+                <p>
+                    Technical report associated with the internship carried out within Colombia's National Development Plan 2010-2014 framework. 
+                    This report describes zoning's key morphological and morphodynamic aspects, mainly focusing on sheet 119 – Barrancabermeja 
+                    in the Santander department.
+                    <a href="https://uids-primo.hosted.exlibrisgroup.com/primo-explore/fulldisplay?docid=uids_bucaramanga167529&vid=UIDS&search_scope=uids_bucaramanga&tab=uids_tab&lang=es_CO&context=L" target="_blank" class="link">Read more</a>
+                </p>
+            </div>
+            <div class="publication" onclick="toggleDetails(this)">
+                <h2>Surface geological units and geomorphological subunits (Scale 1:25,000)</h2>
+                <p>
+                    Technical report of the pilot project for mapping surface geological units and geomorphological subunits conducted in the northern region 
+                    of the Bolivar department, as Phase I of the detailed-scale hazard zoning to be carried out in Colombia. The project was developed in a 
+                    special agreement with the Colombian Geological Survey, which provided project guidance and technical supervision in collaboration with 
+                    the Corporation of the Canal del Dique and the Colombian Caribbean Observatory.
+                    <a href="https://catalogo.sgc.gov.co/cgi-bin/koha/opac-detail.pl?biblionumber=71865&shelfbrowse_itemnumber=71315" target="_blank" class="link">Read more</a>
+                </p>
+            </div>
+        </section>
+    </main>
+    <script>
+        function toggleDetails(element) {
+            const details = element.querySelector('p');
+            if (details.style.display === 'block') {
+                details.style.display = 'none';
+            } else {
+                details.style.display = 'block';
+            }
+        }
+    </script>
+</body>
+</html>
