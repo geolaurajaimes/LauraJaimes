@@ -208,3 +208,9 @@ button.prev:hover, button.next:hover {
     text-align: center;
     margin-top: 20px;
 }
+
+#video-container {
+    width: 100%;
+    max-width: 800px; /* Puedes ajustar este tamaño según tus necesidades */
+    margin: 0 auto; /* Centra el contenedor */
+}
